@@ -4,6 +4,8 @@
 3. KemiskPeeling
 4. Lashlift
 5. Microneedling
+6. ISR
+7. Plasmapen
 */
 
 * {
@@ -33,6 +35,16 @@ body {
   display: grid;
   grid-template-rows: repeat(6, auto);
 }
+
+.big-container-isr {
+
+}
+
+.big-container-plasmapen {
+
+}
+
+
 
 /*All containers here*/
 .container-1huvudsida {
@@ -66,16 +78,25 @@ body {
   display: grid;
   place-content: center;
   width: 100%;
+  margin-bottom:8rem;
 }
 
 .container-4ansikte,
 .container-4kemiskpeeling,
 .container-4lashlift,
-.container-4microneedling {
+.container-4microneedling,
+.container-4isr-1,
+.container-4isr-2,
+.container-4plasmapen-1, 
+.container-4plasmapen-2,
+.container-4plasmapen-3
+ {
   display: grid;
   place-content: center;
   width: 100%;
 }
+
+
 
 .container-6ansikte {
   justify-self: stretch;
@@ -89,7 +110,9 @@ body {
 
 .container-3kemiskpeeling,
 .container-3lashlift,
-.container-3microneedling {
+.container-3microneedling,
+.container-3isr,
+.container-3plasmapen {
   display: grid;
   place-content: center;
   width: 100%;
@@ -100,6 +123,17 @@ body {
   margin-bottom: 10rem;
 }
 
+.container-4isr-1 {
+  margin-bottom:3rem;
+}
+
+.container-4plasmapen-1 {
+  margin-bottom:4rem;
+}
+
+.container-4plasmapen-3 {
+  margin-top:3rem;
+}
 /*All sections here*/
 .section-1huvudsida {
   display: grid;
@@ -215,7 +249,51 @@ body {
   width: 100%;
   max-width: 60vw;
   grid-template-rows: repeat(1fr, 10);
+  gap: 3rem;
+
+}
+
+.section-3isr {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 1rem;
+  width: 100%;
+  max-width: 60vw;
+  text-align: center;
+}
+
+.section-4isr {
+  display: grid;
+  width: 100%;
+  max-width: 60vw;
+  grid-template-rows: repeat(1fr, 10);
   gap: 2rem;
+}
+
+
+.section-3plasmapen {
+  display: grid;
+  grid-template-rows: repeat(7, auto);
+  gap: 1rem;
+  width: 100%;
+  max-width: 60vw;
+  text-align: center;
+}
+
+.section-4plasmapen {
+  display: grid;
+  width: 100%;
+  max-width: 60vw;
+  grid-template-rows: repeat(1fr, 10);
+  gap: 2rem;
+}
+
+.section-4-2plasmapen {
+  display: grid;
+  width: 100%;
+  max-width: 60vw;
+  grid-template-rows: repeat(1fr, 10);
+  gap: 1rem;
 }
 
 /*All other smaller div grid containers here*/
@@ -301,36 +379,78 @@ body {
   place-self: start;
 }
 
-.image-microneedling {
+.image-microneedling,
+.image-isr,
+.image-plasmapen
+ {
   display: grid;
   grid-template-columns: 55% 35%;
   width: 100%;
+  gap:1.3rem;
   justify-content: space-between;
 }
 
-.text-3-microneedling {
+.text-3-microneedling,
+.text-3-isr,
+.text-3-plasmapen {
   display: grid;
   grid-template-rows: repeat(3, auto);
-  gap: 0.9rem;
+  gap: 0.5rem;
   place-self: start;
 }
 
-.text-utanbild-microneedling {
+.text-utanbild-microneedling,
+.text-utanbild-isr {
   display: grid;
   grid-template-rows: auto auto;
 }
 
-.text-4-microneedling {
+.text-4-microneedling,
+.text-4-isr,
+.text-4-plasmapen {
   display: grid;
   grid-template-rows: repeat(4, auto);
-  gap: 0.9rem;
+  gap: 0.5rem;
   place-self: start;
 }
 
 .text-utanbild-8-microneedling {
   display: grid;
   grid-template-rows: repeat(8, auto);
-  gap: 0.8rem;
+  gap: 1.6rem;
+}
+
+.text-isr-1 {
+  display: grid;
+  grid-template-columns: 55% 35%;
+  width: 100%;
+  justify-content: space-between;
+  max-width:60vw;
+  gap:2rem;
+  grid-template-rows: auto auto;
+}
+
+.text-2-isr {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 0.9rem;
+  place-self: start;
+}
+
+
+
+.text-2-plasmapen {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 0.5rem;
+  place-self: start;
+  max-width:60vw;
+}
+
+.container-4plasmapen-1 ul {
+  list-style: none;
+  display:grid;
+  gap:0.5rem;
 }
 /*All grid-items here*/
 
@@ -424,7 +544,9 @@ a.hero-1huvudsida-element:hover {
 .cover-picture-ansikte,
 .cover-picture-kemiskpeeling,
 .cover-picture-lashlift,
-.cover-picture-microneedling {
+.cover-picture-microneedling,
+.cover-picture-isr,
+.cover-picture-plasmapen{
   width: 100vw;
   object-fit: contain;
   overflow-clip-margin: unset;
@@ -469,7 +591,9 @@ a.hero-1huvudsida-element:hover {
 .ansiktsbehandling-bilder-ansikte,
 .bilder-kemiskpeeling,
 .bilder-lashlift,
-.bilder-microneedling {
+.bilder-microneedling,
+.bilder-isr,
+.bilder-plasmapen {
   max-width: 100%;
   align-self: stretch;
   justify-self: stretch;
@@ -526,7 +650,10 @@ h3.text-1huvudsida,
 .section-3ansikte h1,
 .section-3kemiskpeeling h1,
 .section-3lashlift h1,
-.section-3microneedling h1 {
+.section-3microneedling h1,
+.section-3isr h1,
+.section-3plasmapen h1
+{
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -556,3 +683,25 @@ p.text-4huvudsida {
   font-size: 0.8rem;
   font-style: italic;
 }
+
+.section-4isr h2 {
+  text-align:center;
+}
+
+.container-4isr-2 h3 {
+  text-transform: uppercase;
+}
+
+.list-text-3-plasmapen {
+  margin-left:1.5rem;
+}
+
+.text-3-isr ul,
+.section-4-2plasmapen ul {
+  margin-left:2rem;
+}
+
+.lasmer {
+  text-decoration: none;
+}
+
