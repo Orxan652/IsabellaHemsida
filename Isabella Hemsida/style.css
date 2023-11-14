@@ -1136,6 +1136,7 @@ p.text-4huvudsida {
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    overflow-x: hidden;
   }
   .section-4microneedling,
   .section-4kemiskpeeling,
