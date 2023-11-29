@@ -320,7 +320,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   text-transform: uppercase;
-  grid-template-rows: repeat(8, auto);
+  grid-template-rows: repeat(9, auto);
   justify-items: center;
 }
 
